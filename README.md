@@ -19,7 +19,7 @@ lat = 42 + 19 / 60
 theta_rise, theta_set = rise_set_sidereal_time(ra, dec, lat)
 
 print(f"Rises at LST : {hours_to_hm_str(theta_rise)}")
-print(f"Sets at LST  : {hours_to_hm_str(theta_set)}")
+print(f"Sets at LST  : {hours_to_hm_str(theta_set)}")'''
 Rises at LST : 6h11m
 Sets at LST  : 22h20m
 # Example 2: Calculate Altitude and Azimuth of a target object
