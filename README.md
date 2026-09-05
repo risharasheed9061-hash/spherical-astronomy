@@ -7,7 +7,6 @@ computes rise/set times, altitude, and azimuth for celestial objects.
 Based on coursework for "Dynamics of Celestial Bodies," supervised by
 Dr. Chrispin Karthick, Indian Institute of Astrophysics.
 
-
 ## Usage
 
 ```python
