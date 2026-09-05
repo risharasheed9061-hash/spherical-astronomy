@@ -6,10 +6,8 @@ Based on coursework for "Dynamics of Celestial Bodies," supervised by Dr. Chrisp
 
 ## Usage
 
-You can import and use the core astronomical functions directly in Python:
-
 ```python
-from calculator import hms_to_hours, rise_set_sidereal_time, altitude_azimuth, hours_to_hm_str
+from calculator import hms_to_hours, rise_set_sidereal_time, hours_to_hm_str
 
 # Example 1: Compute rise and set sidereal times for Arcturus in Boston
 ra = hms_to_hours(14, 15.7)
@@ -19,9 +17,13 @@ lat = 42 + 19 / 60
 theta_rise, theta_set = rise_set_sidereal_time(ra, dec, lat)
 
 print(f"Rises at LST : {hours_to_hm_str(theta_rise)}")
-print(f"Sets at LST  : {hours_to_hm_str(theta_set)}")'''
-Rises at LST : 6h11m
-Sets at LST  : 22h20m
+print(f"Sets at LST  : {hours_to_hm_str(theta_set)}")
+
+# Output:
+# Rises at LST : 6h11m
+# Sets at LST  : 22h20m
+from calculator import hms_to_hours, altitude_azimuth
+
 # Example 2: Calculate Altitude and Azimuth of a target object
 lst = hms_to_hours(6, 19, 26)
 ra_target = hms_to_hours(2, 55, 7)
@@ -33,5 +35,7 @@ alt, az = altitude_azimuth(h_deg, dec_target, lat_observer)
 
 print(f"Altitude : {alt:.1f}°")
 print(f"Azimuth  : {az:.1f}°")
-Altitude : 32.7°
-Azimuth  : 232.0°
+
+# Output:
+# Altitude : 32.7°
+# Azimuth  : 232.0°
